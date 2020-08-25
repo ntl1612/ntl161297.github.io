@@ -32,7 +32,6 @@ public class Controller {
     public int height = 0;
     public int weight = 0;
     int option = 7;
-    int ez = 3;
     int size;
 
     // creat game screen
@@ -52,8 +51,8 @@ public class Controller {
     //insert hard options
     public void insert() {
         for (int i = 0; i < option; i++) { //loop to insert each option
-            int z = i + ez;
-            xepHinh.sizeCbb.insertItemAt(z + " x " + z, i);
+            int size = i + 3;
+            xepHinh.sizeCbb.insertItemAt(size + " x " + size, i);
         }
         xepHinh.sizeCbb.setSelectedIndex(0);
     }
@@ -70,7 +69,7 @@ public class Controller {
             size = xepHinh.sizeCbb.getSelectedIndex();
         }
 
-        create(size + ez);
+        create(size + 3);
     }
 
     public void show1(JFrame jFrame) {

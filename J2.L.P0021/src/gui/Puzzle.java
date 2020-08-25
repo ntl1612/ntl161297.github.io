@@ -20,6 +20,7 @@ public class Puzzle extends javax.swing.JFrame {
      */
     public control.Controller controller;
     int count = 0;
+
     // count de check
     public Puzzle() {
         initComponents();
@@ -163,13 +164,12 @@ public class Puzzle extends javax.swing.JFrame {
         } else {
             controller.pause();
             int n = JOptionPane.showConfirmDialog(null,
-                    "Would you like green eggs and ham?",
-                    "An Inane Question",
+                    "Are you sure?", "",
                     JOptionPane.YES_NO_OPTION);
             if (n == 0) {
                 controller.createTT();
                 controller.show1(this);
-            }else{
+            } else {
                 controller.resume();
             }
         }

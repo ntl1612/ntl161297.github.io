@@ -78,7 +78,7 @@ public class ButtonManager implements ActionListener {
                     matrixButton[i][j].setEnabled(false);
                 }
             }
-            JOptionPane.showMessageDialog(null, "Win roi babe ~~~~!!!!!!!!");
+            JOptionPane.showMessageDialog(null, "You win!");
         }
 
     }
