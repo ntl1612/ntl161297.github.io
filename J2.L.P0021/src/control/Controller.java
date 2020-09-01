@@ -15,7 +15,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -107,7 +106,7 @@ public class Controller {
      public void resume(){
         cTime.resume();
     }
-    public static countTime cTime = new countTime();
+    public static final countTime cTime = new countTime();
 
     public static class countTime extends Thread {
 

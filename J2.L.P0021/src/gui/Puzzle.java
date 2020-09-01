@@ -6,7 +6,6 @@
 package gui;
 
 import control.Controller;
-import java.awt.Dimension;
 import javax.swing.JOptionPane;
 
 /**
