@@ -5,6 +5,8 @@
  */
 package puzzle;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 
 /**
@@ -27,6 +29,14 @@ public class PuzzleGUI extends javax.swing.JFrame {
         return lblCountMove;
     }
 
+    public JButton getBtnNewGame() {
+        return btnNewGame;
+    }
+
+    public JComboBox<String> getCbxSize() {
+        return cbxSize;
+    }
+
     public JLabel getLblCountTime() {
         return lblCountTime;
     }
@@ -43,6 +53,7 @@ public class PuzzleGUI extends javax.swing.JFrame {
         lblCountMove = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         pnLayout.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -79,9 +90,8 @@ public class PuzzleGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblCountMove)
-                        .addComponent(lblCountTime))
+                    .addComponent(lblCountMove)
+                    .addComponent(lblCountTime)
                     .addComponent(btnNewGame)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
@@ -158,10 +168,10 @@ c.newGame();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNewGame;
-    protected javax.swing.JComboBox<String> cbxSize;
+    private javax.swing.JComboBox<String> cbxSize;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblCountMove;
     private javax.swing.JLabel lblCountTime;
-    protected javax.swing.JPanel pnLayout;
+    private javax.swing.JPanel pnLayout;
     // End of variables declaration//GEN-END:variables
 }

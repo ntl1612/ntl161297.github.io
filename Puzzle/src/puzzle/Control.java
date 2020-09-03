@@ -44,7 +44,7 @@ public final class Control {
         isGameStart = true;
     }
     public void addButton() {
-        size = p.cbxSize.getSelectedIndex() + 3;
+        size = p.getCbxSize().getSelectedIndex() + 3;
         pn.removeAll();
         pn.setLayout(new GridLayout(size, size, 10, 10));
         pn.setPreferredSize(new Dimension(size * 60, size * 60));
